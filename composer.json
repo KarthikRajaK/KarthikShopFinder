@@ -1,0 +1,19 @@
+{
+  "name": "karthik/karthik-shop-finder",
+  "description": "Karthik Shop Finder",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {
+      "KarthikShopFinder\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "KarthikShopFinder\\KarthikShopFinder",
+    "label": {
+      "de-DE": "Karthik Shop Finder",
+      "en-GB": "Karthik Shop Finder"
+    }
+  }
+}
