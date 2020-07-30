@@ -13,7 +13,7 @@ use Shopware\Core\Framework\DataAbstractionLayer\EntityCollection;
  * @method ShopFinderEntity|null first()
  * @method ShopFinderEntity|null last()
  */
-class ShopFinderEntityCollection extends EntityCollection
+class ShopFinderCollection extends EntityCollection
 {
     protected function getExpectedClass(): string
     {

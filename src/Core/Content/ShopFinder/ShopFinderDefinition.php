@@ -25,7 +25,7 @@ class ShopFinderDefinition extends EntityDefinition
 
     public function getCollectionClass(): string
     {
-        return ShopFinderEntityCollection::class;
+        return ShopFinderCollection::class;
     }
 
     public function getEntityClass(): string
