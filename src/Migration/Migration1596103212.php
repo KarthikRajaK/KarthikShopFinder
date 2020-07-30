@@ -5,11 +5,11 @@ namespace KarthikShopFinder\Migration;
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Framework\Migration\MigrationStep;
 
-class Migration1593085300 extends MigrationStep
+class Migration1596103212 extends MigrationStep
 {
     public function getCreationTimestamp(): int
     {
-        return 1593085300;
+        return 1596103212;
     }
 
     public function update(Connection $connection): void
@@ -28,8 +28,8 @@ class Migration1593085300 extends MigrationStep
             `created_at`    DATETIME(3),
             `updated_at`    DATETIME(3),
             PRIMARY KEY (`id`),
-            KEY `fk.swag_shop_finder.country_id` (`country_id`),
-            CONSTRAINT `fk.swag_shop_finder.country_id` FOREIGN KEY (`country_id`)
+            KEY `fk.karthik_shop_finder.country_id` (`country_id`),
+            CONSTRAINT `fk.karthik_shop_finder.country_id` FOREIGN KEY (`country_id`)
             REFERENCES `country` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;");
     }
